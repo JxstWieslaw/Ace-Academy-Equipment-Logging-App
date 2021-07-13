@@ -1,0 +1,1 @@
+java -jar Ace-Academy-Equipment-Log.jar

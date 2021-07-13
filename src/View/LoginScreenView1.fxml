@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0"
+            style="-fx-background-color: #f2f2f2; " xmlns="http://javafx.com/javafx/10.0.1"
+            fx:controller="Controller.LoginScreenController" >
+    <children>
+        <Label text="Username:" layoutX=" 80" layoutY="200" style="-fx-font-weight:bold;"/>
+        <Label text="Password:" layoutX=" 80" layoutY="270" style="-fx-font-weight:bold;" />
+
+        <TextField fx:id="user"  layoutX=" 200" layoutY="200"/>
+        <TextField fx:id="password"  layoutX=" 200" layoutY="270"  />
+        <Button fx:id="loginButton" layoutX=" 140" layoutY="350" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Login"
+                style="-fx-font-weight:bold;" StackPane.alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="70"
+                                        onAction="#loginAction"/>
+        <Button fx:id="exitButton" layoutX=" 280" layoutY="350" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Exit"
+                style="-fx-font-weight:bold;" StackPane.alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="70"
+                onAction="#exitAction"/>
+        <Label fx:id="usernamedisplay" layoutX=" 200" layoutY="420" prefHeight="50.0" prefWidth="150.0" />
+
+
+        <ImageView fx:id="ace_tennis" fitHeight="110.0" fitWidth="120.0" layoutX="15.0" layoutY="15.0"
+                     pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/ace.png"/>
+            </image>
+        </ImageView>
+
+
+        <Text fill="#004d00" fontSmoothingType="LCD" layoutX="49.0" layoutY="70.0" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Log Into Ace Academy" textAlignment="CENTER" wrappingWidth="521.140625">
+            <font>
+                <Font name="Bookman Old Style Bold" size="45.0"/>
+            </font>
+        </Text>
+
+        <Pane prefHeight="500.0" prefWidth="10.0" style="-fx-background-color: #2ecc71;"/>
+        <Pane layoutX="10.0" layoutY="197.0" prefHeight="403.0" prefWidth="10.0"
+              style="-fx-background-color: #f1c40f;"/>
+        <Pane layoutX="490.0" prefHeight="500.0" prefWidth="10.0" style="-fx-background-color: #8e44ad;"/>
+        <Pane layoutX="20.0" layoutY="490.0" prefHeight="10.0" prefWidth="461.0" style="-fx-background-color: #3498db;"/>
+        <Pane layoutX="481.0" layoutY="145.0" prefHeight="355.0" prefWidth="10.0"
+              style="-fx-background-color: #27ae60;"/>
+        <Pane layoutX="130.0" layoutY="140.0" prefHeight="5.0" prefWidth="340.0"
+              style="-fx-background-color: #001a66;"/>
+    </children>
+</AnchorPane>
+
